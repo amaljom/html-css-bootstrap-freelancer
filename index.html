@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg fixed-top bg-ancorascuro">
+        <nav class="navbar navbar-expand-lg fixed-top bg-ancorascuro navbar-dark">
             <div class="container-fluid col-11 col-md-10 col-lg-9">
               <a class="navbar-brand" href="#">Navbar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,8 +20,8 @@
               <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav align-items-end">
                   <a class="nav-link active" aria-current="page" href="#">PORTFOLIO</a>
-                  <a class="nav-link" href="#">ABOUT</a>
-                  <a class="nav-link" href="#">CONTACT</a>
+                  <a class="nav-link" href="#ABOUT">ABOUT</a>
+                  <a class="nav-link" href="#CONTACT-ME">CONTACT</a>
                 </div>
               </div>
             </div>
@@ -44,7 +44,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center m-5 col-12 col-md-10 col-lg-9 mx-auto">
+        <div id="PORTFOLIO" class="text-center m-5 col-12 col-md-10 col-lg-9 mx-auto">
             <h2>PORTFOLIO</h2>
             <div class="d-flex align-items-center justify-content-center">
                 <div class="col-1 bg-nero bg-dark"></div>
@@ -61,7 +61,7 @@
                 <img class="col-11 col-md-6 col-lg-4 rounded-3 p-1" src="./img/submarine.png" alt="NON TROVATO">
             </div>
         </div>
-        <div class="text-center bg-verde py-5 text-white">
+        <div id="ABOUT" class="text-center bg-verde py-5 text-white">
             <h2 class="pt-2">ABOUT</h2>
             <div class="d-flex align-items-center justify-content-center">
                 <div class="col-1 bg-nero bg-white"></div>
@@ -83,6 +83,24 @@
                 </P>
             </div>
             <span class="border p-2 rounded-3"> <i class="fa-solid fa-arrow-down"></i> Download</span>
+        </div>
+        
+        
+        <div class=" m-5 col-12 col-md-10 col-lg-9 mx-auto"">
+            <h2 id="CONTACT-ME" class="text-center pt-2">CONTACT ME</h2>
+            
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="col-1 bg-nero bg-dark"></div>
+                <i class="fa-solid fa-star fs-2 px-2"></i>
+                <div class="col-1 bg-nero bg-dark"></div>
+            </div>
+            
+            
+            <input type="text" class="form-control border-0 border-bottom" id="exampleFormControlInput1" placeholder="Nome">
+            <input type="email" class="form-control border-0 border-bottom" id="exampleFormControlInput1" placeholder="Email Address">
+            <input type="number" class="form-control border-0 border-bottom" id="exampleFormControlInput1" placeholder="Phone number">
+            <textarea class="form-control border-0 border-bottom" id="exampleFormControlTextarea1" rows="5" placeholder="Messaggio"></textarea>
+            <button type="submit" class="btn btn-primary bg-verde">Send</button>
         </div>
     </main>
     <footer>
